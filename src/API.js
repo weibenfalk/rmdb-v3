@@ -15,7 +15,7 @@ const defaultConfig = {
   },
 };
 
-export default {
+const API = {
   fetchMovies: async (searchTerm, page) => {
     const endpoint = searchTerm
       ? `${SEARCH_BASE_URL}${searchTerm}&page=${page}`
@@ -60,3 +60,5 @@ export default {
     }
   },
 };
+
+export default API;
